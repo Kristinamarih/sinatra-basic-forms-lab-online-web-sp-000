@@ -13,5 +13,6 @@ class App < Sinatra::Base
   post '/puppy' do
     puppy = Puppy.new(params[:user_input])
     erb :display_puppy
+  end
 
 end
